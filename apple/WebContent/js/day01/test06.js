@@ -19,3 +19,4 @@ document.getElementById('txt').innerHTML =
 document.getElementById('txt').innerHTML = 
 		document.getElementById('txt').innerHTML + 'obj type : ' + typeof obj + '<br>';
 		
+console.log(document.getElementById('txt').innerHTML + 'obj type : ' + typeof obj + '<br>');
