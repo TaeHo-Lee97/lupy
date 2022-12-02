@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<script type="text/javascript">
+	
+	document.write('<h1>1. </h1>');
+	for(var i = 0 ; i < 5 ; i++ ){
+		document.write('<pre>');
+		for(var j = 0 ; j < 5 ; j++ ){
+			document.write('*');
+		}
+		document.write('</pre>');
+	}
+	
+	document.write('<h1>2. </h1>');
+	for(var i = 0 ; i < 5 ; i++ ){
+		document.write('<pre>');
+		for(var j = 0 ; j <= i ; j++ ){
+			document.write('*');
+		}
+		document.write('</pre>');
+	}
+	
+	document.write('<h1>3. </h1>');
+	for(var i = 0 ; i < 5 ; i++ ){
+		document.write('<pre>');
+		for(var j = 0 ; j < 5 - (i + 1) ; j++ ){
+			document.write(' ');
+		}
+		for(var j = 0 ; j < i + 1 ; j++ ){
+			document.write('*');
+		}
+		document.write('</pre>');
+	}
+	
+	document.write('<h1>3 - 1. </h1>');
+	for(var i = 0 ; i < 5 ; i++ ){
+		document.write('<pre>');
+		for(var j = 0 ; j < 5 ; j++ ){
+			var star = '*';
+			if(j < 5 - (i+1)){
+				star = ' ';
+			}
+			document.write(star);
+		}
+		document.write('</pre>');
+	}
+	
+	document.write('<h1>4. </h1>');
+	for(var i = 0 ; i < 5 ; i++ ){
+		document.write('<pre>');
+		for(var j = 0 ; j < 5 - i ; j++ ){
+			document.write('*');
+		}
+		for(var j = 0 ; j < i + 1 ; j++ ){
+			document.write(' ');
+		}
+		document.write('</pre>');
+	}
+	
+	document.write('<h1>5. </h1>');
+	for(var i = 0 ; i < 5 ; i++ ){
+		document.write('<pre>');
+		for(var j = 0 ; j < i + 1 ; j++ ){
+			document.write(' ');
+		}
+		for(var j = 0 ; j < 5 - i ; j++ ){
+			document.write('*');
+		}
+		document.write('</pre>');
+	}
+	
+	document.write('<h1>6. </h1>');
+	for(var i = 0 ; i < 5 ; i++ ){
+		document.write('<pre>');
+		for (var j = 0 ; j < 5 + i ; j++ ){//								i = 0 =>  j < 5 == > if => j < 4 ==> ' ' !== * ==> [0,4] *  / i = 1 => j < 5 ==> if => j < 4  
+			var star = '*';
+			if(j < 5 - (i + 1)){
+				star = ' ';
+			} else{
+				star = '*';
+			}
+			document.write(star);
+		}
+		document.write('</pre>');
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -23,21 +23,14 @@
 	
 	document.write(str);
 */
-	for(var aa = 0 ; aa < 1 ; aa++ ){
+	var str = '';
+	for(var aa = 0 ; aa < 5 ; aa++ ){
 		for(var bb = 0 ; bb < 1 ; bb++ ){
-			for(var cc = 0 ; cc < 1 ; cc++ ){
-				for(var dd = 0 ; dd < 2 ; dd++ ){
-					for(var ee = 0 ; ee < 1 ; ee++){
-						document.write('*');
-					}
-					document.write('<br>');
-				}
-				document.write('<br>');
-			}
-			document.write('<br>');
+			str = str + '*';			
 		}
-		document.write('<br>');
+		str = str + '<br>';
 	}
+		document.write(str);
 </script>
 </head>
 <body>
